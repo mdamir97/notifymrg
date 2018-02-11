@@ -9,8 +9,11 @@ Callback onNotificationRemoved delete notification, new notification or update c
 
 cancelAllNotifications (): delete all the system can be cleared notification;
 cancelNotification (String pkg, String tag, int id): delete a specific notification;
+
 getActiveNotifications (): Returns a list of all notifications for the current system to StatusBarNotification []
+
 onNotificationPosted (StatusBarNotification sbn): The starting callback when the system receives a new notification;
+
 onNotificationRemoved (StatusBarNotification sbn): The starting callback when the system notification is deleted;
  StatusBarNotification detailed category
 StatusBarNotification, multi-process delivery object, all the notification information will be passed in this class through the Binder. Several important internal methods are as follows:
